@@ -1,0 +1,102 @@
+:root {
+  --dark-color: #222831;
+  --grey-color: #393e46;
+  --light-color: #eeeeee;
+  --blue-color: #00adb5;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+body {
+  background: url("hero-section-bg.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+nav {
+  height: 5rem;
+  color: var(--dark-color);
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav-items,
+.overview {
+  display: flex;
+  gap: 1rem;
+}
+.overview {
+  margin-right: 4rem;
+  font-weight: bold;
+}
+.logo h2 {
+  color: var(--blue-color);
+  cursor: pointer;
+  margin: 0 0.5rem;
+  font-size: 2.5rem;
+}
+nav li {
+  list-style: none;
+  margin: 0 0.5rem;
+}
+nav a {
+  text-decoration: none;
+  color: var(--dark-color);
+}
+nav a:hover {
+  color: var(--grey-color);
+}
+nav a::after {
+  content: "";
+  display: block;
+  height: 3px;
+  background: var(--grey-color);
+  width: 0%;
+  transition: all ease-in-out 300ms;
+}
+nav a:hover::after {
+  width: 100%;
+}
+.hero-section {
+  text-align: center;
+  margin: 3rem;
+}
+.hero-section img {
+  width: 20rem;
+}
+.name-about-text {
+  width: 40%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  color: var(--dark-color);
+}
+.name-about-text h2 {
+  font-size: 3.5rem;
+}
+.name-about-text p {
+  font-size: 1.2rem;
+}
+.skills-container {
+  text-align: center;
+  width: 70%;
+  background-color: var(--blue-color);
+  margin: auto;
+  padding-top: 3rem;
+  padding-bottom: 15rem;
+  border-radius: 1rem;
+}
+.skills-container h2 {
+  color: white;
+  font-size: 3rem;
+}
+.skills {
+  height: 5rem;
+  width: 5rem;
+  background-color: aqua;
+}
